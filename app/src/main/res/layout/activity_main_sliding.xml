@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <edu.cuhk.map.building.MySlidingPaneLayout
+        android:id="@+id/sliding_pane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ad"
+        android:layout_alignParentTop="true" >
+
+        <fragment
+            android:id="@+id/list_pane"
+            android:name="edu.cuhk.map.building.AbbrListFragment"
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start" />
+
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="480dp"
+            android:layout_weight="1"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            
+            android:layout_height="match_parent" />
+
+        <!--
+                <fragment
+            android:id="@+id/content_pane"
+            android:name="edu.cuhk.map.building.AbbrListFragment"
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        -->
+    </edu.cuhk.map.building.MySlidingPaneLayout>
+
+</RelativeLayout>

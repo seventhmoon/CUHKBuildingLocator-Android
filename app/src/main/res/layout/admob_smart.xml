@@ -1,0 +1,16 @@
+
+
+    <com.google.ads.AdView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:googleads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="fill"
+        googleads:adSize="SMART_BANNER"
+        googleads:adUnitId="a14f7f0fb759f6f"
+        googleads:loadAdOnCreate="true"
+        googleads:testDevices="TEST_EMULATOR,0146BF540E00D010" />
+
+ 
